@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Projet1</string>
+    <string name="toggle_register">Pas de compte ? <b><font color="#0284C7">Créer un compte</font></b></string>
+    <string name="toggle_login">Déjà un compte ? <b><font color="#0284C7">Se connecter</font></b></string>
+</resources>
