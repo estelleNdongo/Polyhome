@@ -18,8 +18,9 @@ object Constants {
     const val KEY_DEVICE_OPENING = "deviceOpening"
     const val KEY_DEVICE_OPENING_MODE = "deviceOpeningMode"
     const val KEY_DEVICE_POWER = "devicePower"
+    const val KEY_DEVICE = "device"
 
-    // HTTP Codes
+    // Codes HTTP
     const val HTTP_SUCCESS = 200
     const val HTTP_SERVER_ERROR = 500
 

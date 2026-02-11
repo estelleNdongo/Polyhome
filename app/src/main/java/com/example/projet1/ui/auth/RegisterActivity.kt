@@ -8,9 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.projet1.R
 import com.example.projet1.data.models.auth.RegisterData
 import com.example.projet1.data.network.Api
+import com.example.projet1.data.repository.AuthRepository
 import com.example.projet1.utils.Constants
 
 class RegisterActivity : AppCompatActivity() {
+    private val authRepository = AuthRepository()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.auth_activity_register)
@@ -27,7 +29,7 @@ class RegisterActivity : AppCompatActivity() {
             password = password.toString()
 
         )
-        Api().post<RegisterData>(Constants.API_USERS_REGISTER, registerData, ::registerSuccess)
+       authRepository.register(registerData, ::registerSuccess)
 
     }
     private fun registerSuccess(responseCode: Int){

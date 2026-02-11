@@ -40,13 +40,16 @@ class DevicesActivity : AppCompatActivity(){
                 this,
                 DeviceDetailActivity::class.java
             )
+
             intent.putExtra(Constants.KEY_TOKEN, token)
-            intent.putExtra(Constants.KEY_DEVICE_ID, device.id)
-            intent.putExtra(Constants.KEY_DEVICE_TYPE, device.type)
-            intent.putExtra(Constants.KEY_DEVICE_OPENING, device.opening)
-            intent.putExtra(Constants.KEY_DEVICE_OPENING_MODE, device.openingMode)
-            intent.putExtra(Constants.KEY_DEVICE_POWER, device.power)
             intent.putExtra(Constants.KEY_HOUSE_ID, houseId)
+            intent.putExtra(Constants.KEY_DEVICE, device)
+           // intent.putExtra(Constants.KEY_DEVICE_ID, device.id)
+           // intent.putExtra(Constants.KEY_DEVICE_TYPE, device.type)
+           // intent.putExtra(Constants.KEY_DEVICE_OPENING, device.opening)
+           // intent.putExtra(Constants.KEY_DEVICE_OPENING_MODE, device.openingMode)
+            //intent.putExtra(Constants.KEY_DEVICE_POWER, device.power)
+            //intent.putExtra(Constants.KEY_HOUSE_ID, houseId)
             startActivity(intent)
 
 

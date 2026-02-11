@@ -8,6 +8,7 @@ import com.example.projet1.ui.devices.DevicesActivity
 import com.example.projet1.R
 import com.example.projet1.data.models.house.HousesData
 import com.example.projet1.data.network.Api
+import com.example.projet1.data.repository.HouseRepository
 import com.example.projet1.utils.Constants
 import java.util.ArrayList
 
@@ -15,6 +16,7 @@ class HousesActivity  : AppCompatActivity() {
     private var houses : ArrayList<HousesData> = ArrayList()
     private lateinit var houseAdapter : HousesAdapter
     private var token : String? = null
+    private val houseRepository = HouseRepository()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.houses_activity)
@@ -49,6 +51,7 @@ class HousesActivity  : AppCompatActivity() {
          }
     }
     private fun loadHouses(){
-        Api().get<List<HousesData>>(Constants.API_HOUSES, ::loadHousesSuccess,token, )
+        houseRepository.getHouses(token ?: "", ::loadHousesSuccess)
+        
     }
 }

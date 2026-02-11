@@ -10,10 +10,11 @@ import com.example.projet1.ui.houses.HousesActivity
 import com.example.projet1.R
 import com.example.projet1.data.models.auth.AuthResponse
 import com.example.projet1.data.models.auth.LoginData
-import com.example.projet1.data.network.Api
+import com.example.projet1.data.repository.AuthRepository
 import com.example.projet1.utils.Constants
 
 class LoginActivity : AppCompatActivity() {
+    private val authRepository = AuthRepository()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.auth_activity_login)
@@ -50,11 +51,7 @@ class LoginActivity : AppCompatActivity() {
                 login = login.toString(),
                 password = password.toString()
             )
-            Api().post<LoginData, AuthResponse>(
-                Constants.API_USERS_AUTH,
-                loginData,
-                ::loginSuccess
-            )
+            authRepository.login(loginData, ::loginSuccess)
         } catch (e: Exception) {
             Toast.makeText(this, e.message, Toast.LENGTH_LONG).show()
         }
