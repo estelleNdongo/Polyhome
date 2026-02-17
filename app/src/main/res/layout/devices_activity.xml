@@ -86,7 +86,82 @@
             android:layout_marginStart="3dp" />
     </LinearLayout>
 
-    <!-- Label PÉRIPHÉRIQUES -->
+    <HorizontalScrollView
+        android:id="@+id/filterSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:paddingTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tabs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/filterAll"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="Tous"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:background="@drawable/tab_active"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/filterShutter"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="Volets"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#64748B"
+                android:gravity="center"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:background="@drawable/tab_inactive"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/filterGarage"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="Garages"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#64748B"
+                android:gravity="center"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:background="@drawable/tab_inactive"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:id="@+id/filterLight"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:text="Lumières"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#64748B"
+                android:gravity="center"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:background="@drawable/tab_inactive" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
     <TextView
         android:id="@+id/labelDevices"
         android:layout_width="0dp"
@@ -104,7 +179,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- ListView des périphériques -->
+
     <ListView
         android:id="@+id/listDevices"
         android:layout_width="0dp"
@@ -119,9 +194,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tabs" />
+        app:layout_constraintTop_toBottomOf="@id/filterSection" />
 
-    <!-- Section ajouter user (visible seulement dans tab Users) AVANT la liste -->
     <LinearLayout
         android:id="@+id/addUserSection"
         android:layout_width="0dp"
@@ -132,17 +206,17 @@
         android:paddingTop="14dp"
         android:paddingBottom="10dp"
         android:visibility="gone"
-        app:layout_constraintTop_toBottomOf="@id/tabs"
+        app:layout_constraintTop_toBottomOf="@id/filterSection"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <EditText
+        <AutoCompleteTextView
             android:id="@+id/inputAddUser"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:background="@drawable/input_bg"
-            android:hint="Email du user à inviter"
+            android:hint="user à inviter"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
             android:textSize="12sp"
@@ -259,5 +333,44 @@
                 android:layout_marginStart="4dp" />
         </LinearLayout>
     </LinearLayout>
+    <FrameLayout
+        android:id="@+id/btnModeNuit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_mode_nuit"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌙"
+                android:textSize="16sp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mode Nuit"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

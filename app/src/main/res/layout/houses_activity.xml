@@ -64,6 +64,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+
+    <AutoCompleteTextView
+        android:id="@+id/searchHouse"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/input_bg"
+        android:hint="Rechercher une maison..."
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="12sp"
+        android:textColor="#0F172A"
+        android:textColorHint="#94A3B8"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintTop_toBottomOf="@id/labelHouses"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <!-- ListView des maisons -->
     <ListView
         android:id="@+id/listHouses"
@@ -75,11 +95,12 @@
         android:paddingStart="24dp"
         android:paddingEnd="24dp"
         android:paddingBottom="24dp"
+        android:layout_marginTop="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/labelHouses"
+        app:layout_constraintTop_toBottomOf="@id/searchHouse"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

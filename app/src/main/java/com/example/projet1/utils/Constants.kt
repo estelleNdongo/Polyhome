@@ -23,6 +23,8 @@ object Constants {
     const val KEY_DEVICE_OPENING_MODE = "deviceOpeningMode"
     const val KEY_DEVICE_POWER = "devicePower"
     const val KEY_DEVICE = "device"
+    const val KEY_USER_PREFERENCES = "userLogin"
+    const val KEY_PREFERENCES = "Polyhome"
 
     // Codes HTTP
     const val HTTP_SUCCESS = 200

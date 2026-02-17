@@ -33,7 +33,7 @@ class UserRepository {
         )
 
     }
-    fun removeUser(houseId: Int, userLogin: String, token: String, onSuccess: (Int) -> Unit){
+    fun removeUser(houseId: Int, userLogin: AddUserData, token: String, onSuccess: (Int) -> Unit){
         Api().delete(
             "${Constants.API_HOUSES}/$houseId/users",
             userLogin,

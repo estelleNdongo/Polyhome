@@ -176,7 +176,7 @@ class DeviceDetailActivity: AppCompatActivity() {
                 btnCommand3.visibility = View.VISIBLE
 
 
-                btnCommand1.setOnClickListener { sendCommand(device.availableCommands[0]) }  // ✅ Corrigé
+                btnCommand1.setOnClickListener { sendCommand(device.availableCommands[0]) }
                 btnCommand2.setOnClickListener { sendCommand(device.availableCommands[1]) }
                 btnCommand3.setOnClickListener { sendCommand(device.availableCommands[2]) }
             }

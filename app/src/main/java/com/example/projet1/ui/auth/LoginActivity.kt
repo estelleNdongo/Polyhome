@@ -12,6 +12,7 @@ import com.example.projet1.data.models.auth.AuthResponse
 import com.example.projet1.data.models.auth.LoginData
 import com.example.projet1.data.repository.AuthRepository
 import com.example.projet1.utils.Constants
+import androidx.core.content.edit
 
 class LoginActivity : AppCompatActivity() {
     private val authRepository = AuthRepository()
@@ -26,6 +27,12 @@ class LoginActivity : AppCompatActivity() {
     private fun loginSuccess(responseCode: Int, response: AuthResponse?){
 
             if(responseCode == Constants.HTTP_SUCCESS){
+                val login = findViewById<EditText>(R.id.loginEmail).text.toString()
+                val sharedPreferences = getSharedPreferences(Constants.KEY_PREFERENCES, MODE_PRIVATE)
+
+                sharedPreferences.edit {
+                    putString(Constants.KEY_USER_PREFERENCES, login)
+                }
                 val intent = Intent(
                     this,
                     HousesActivity::class.java
