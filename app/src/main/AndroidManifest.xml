@@ -22,6 +22,9 @@
         <activity
             android:name=".ui.devices.DevicesActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.devices.DeviceDetailActivity"
+            android:exported="false" />
 
         <activity
             android:name=".ui.auth.LoginActivity"

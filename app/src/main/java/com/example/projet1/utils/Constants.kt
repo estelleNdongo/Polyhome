@@ -10,6 +10,10 @@ object Constants {
     // Endpoints pour les maisons
     const val API_HOUSES = "$BASE_URL/api/houses"
 
+    //Endpoints pour les users
+    const val API_USERS = "$BASE_URL/api/users"
+
+
     // Clés pour les Intent
     const val KEY_TOKEN = "Token"
     const val KEY_HOUSE_ID = "houseId"

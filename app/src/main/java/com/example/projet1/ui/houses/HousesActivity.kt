@@ -44,11 +44,14 @@ class HousesActivity  : AppCompatActivity() {
         }
     }
     private fun loadHousesSuccess(responseCode: Int, loadedHouses: List<HousesData>?){
-        if(responseCode == Constants.HTTP_SUCCESS && loadedHouses != null){
-            houses.addAll(loadedHouses)
-            houseAdapter.notifyDataSetChanged()
+        runOnUiThread {
+            if(responseCode == Constants.HTTP_SUCCESS && loadedHouses != null){
+                houses.addAll(loadedHouses)
+                houseAdapter.notifyDataSetChanged()
 
-         }
+            }
+        }
+
     }
     private fun loadHouses(){
         houseRepository.getHouses(token ?: "", ::loadHousesSuccess)
