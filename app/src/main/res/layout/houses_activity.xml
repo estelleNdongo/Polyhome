@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     tools:context=".ui.houses.HousesActivity">
 
-    <!-- Header -->
+
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Logo -->
+
         <FrameLayout
             android:layout_width="34dp"
             android:layout_height="34dp"
@@ -36,7 +36,7 @@
                 app:srcCompat="@drawable/ic_house" />
         </FrameLayout>
 
-        <!-- Titre -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_marginStart="10dp" />
     </LinearLayout>
 
-    <!-- Label LISTE DES MAISONS -->
+
     <TextView
         android:id="@+id/labelHouses"
         android:layout_width="0dp"
@@ -84,7 +84,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- ListView des maisons -->
+
     <ListView
         android:id="@+id/listHouses"
         android:layout_width="0dp"

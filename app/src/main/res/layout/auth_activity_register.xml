@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     tools:context=".ui.auth.RegisterActivity">
 
-    <!-- Image de fond -->
+
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
 
-    <!-- Logo -->
+
     <FrameLayout
         android:id="@+id/logoFrame"
         android:layout_width="64dp"
@@ -39,7 +39,7 @@
             app:srcCompat="@drawable/ic_house" />
     </FrameLayout>
 
-    <!-- Titre -->
+
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="14dp" />
 
-    <!-- Sous-titre -->
+
     <TextView
         android:id="@+id/subtitleText"
         android:layout_width="wrap_content"
@@ -66,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp" />
 
-    <!-- Label Email -->
+
     <TextView
         android:id="@+id/labelEmail"
         android:layout_width="0dp"
@@ -82,7 +82,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" />
 
-    <!-- Input Email -->
+
     <EditText
         android:id="@+id/registerEmail"
         android:layout_width="0dp"
@@ -102,7 +102,7 @@
         android:layout_marginEnd="32dp"
         tools:text="" />
 
-    <!-- Label Mot de passe -->
+
     <TextView
         android:id="@+id/labelPassword"
         android:layout_width="0dp"
@@ -118,7 +118,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" />
 
-    <!-- Input Mot de passe -->
+
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="0dp"
@@ -138,7 +138,7 @@
         android:layout_marginEnd="32dp"
         tools:text="" />
 
-    <!-- Bouton Créer mon compte -->
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="0dp"
@@ -156,7 +156,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/registerPassword" />
 
-    <!-- Texte : vous avez déjà un compte ? -->
+
     <TextView
         android:id="@+id/textAlreadyAccount"
         android:layout_width="0dp"
@@ -172,7 +172,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" />
 
-    <!-- Bouton Se connecter -->
+
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="0dp"

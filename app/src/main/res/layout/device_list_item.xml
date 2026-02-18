@@ -10,7 +10,7 @@
     android:paddingTop="14dp"
     android:paddingBottom="14dp">
 
-    <!-- Checkbox (toujours visible) -->
+
     <FrameLayout
         android:id="@+id/deviceCheckbox"
         android:layout_width="20dp"
@@ -30,7 +30,7 @@
             app:srcCompat="@drawable/ic_check" />
     </FrameLayout>
 
-    <!-- Icône périphérique -->
+
     <FrameLayout
         android:id="@+id/deviceIconFrame"
         android:layout_width="42dp"
@@ -50,7 +50,7 @@
             app:srcCompat="@drawable/ic_shutter" />
     </FrameLayout>
 
-    <!-- Nom du périphérique -->
+
     <LinearLayout
         android:id="@+id/deviceInfo"
         android:layout_width="0dp"
@@ -82,7 +82,7 @@
             tools:text="Ouverture : 1" />
     </LinearLayout>
 
-    <!-- Badge état -->
+
     <TextView
         android:id="@+id/deviceBadge"
         android:layout_width="wrap_content"

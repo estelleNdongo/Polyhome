@@ -10,7 +10,7 @@
     android:paddingTop="12dp"
     android:paddingBottom="12dp">
 
-    <!-- Avatar icône user générique -->
+
     <FrameLayout
         android:id="@+id/userAvatar"
         android:layout_width="36dp"
@@ -29,7 +29,7 @@
             app:srcCompat="@drawable/ic_user" />
     </FrameLayout>
 
-    <!-- Info user -->
+
     <LinearLayout
         android:id="@+id/userInfo"
         android:layout_width="0dp"
@@ -67,7 +67,7 @@
             tools:text="Propriétaire" />
     </LinearLayout>
 
-    <!-- Bouton supprimer (visible seulement pour les invités) -->
+
     <TextView
         android:id="@+id/btnRemoveUser"
         android:layout_width="wrap_content"

@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     tools:context=".ui.devices.DeviceDetailActivity">
 
-    <!-- Header -->
+
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
@@ -42,7 +42,7 @@
             android:layout_marginStart="10dp" />
     </LinearLayout>
 
-    <!-- ScrollView -->
+
     <ScrollView
         android:id="@+id/scrollContent"
         android:layout_width="0dp"
@@ -63,7 +63,7 @@
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
-            <!-- Grande icône -->
+
             <FrameLayout
                 android:id="@+id/detailIconFrame"
                 android:layout_width="80dp"
@@ -81,7 +81,7 @@
                     app:srcCompat="@drawable/ic_shutter" />
             </FrameLayout>
 
-            <!-- Nom -->
+
             <TextView
                 android:id="@+id/detailName"
                 android:layout_width="match_parent"
@@ -93,7 +93,7 @@
                 android:layout_marginBottom="6dp"
                 tools:text="Shutter 1.1" />
 
-            <!-- Badge état -->
+
             <TextView
                 android:id="@+id/detailBadge"
                 android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
                 android:layout_marginBottom="28dp"
                 tools:text="Ouvert" />
 
-            <!-- Info box -->
+
             <LinearLayout
                 android:id="@+id/infoBox"
                 android:layout_width="match_parent"
@@ -123,7 +123,7 @@
                 android:paddingBottom="14dp"
                 android:layout_marginBottom="24dp">
 
-                <!-- Type -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
                     android:layout_height="1dp"
                     android:background="#E2E8F0" />
 
-                <!-- Ouverture / Puissance -->
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -179,14 +179,14 @@
                         tools:text="1" />
                 </LinearLayout>
 
-                <!-- Séparateur Mode -->
+
                 <View
                     android:id="@+id/separatorMode"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="#E2E8F0" />
 
-                <!-- Mode (caché pour les lumières via code) -->
+
                 <LinearLayout
                     android:id="@+id/rowMode"
                     android:layout_width="match_parent"
@@ -213,7 +213,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Label COMMANDES -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -223,7 +223,7 @@
                 android:textColor="#64748B"
                 android:layout_marginBottom="10dp" />
 
-            <!-- Bouton 1 (OPEN / TURN ON) -->
+
             <LinearLayout
                 android:id="@+id/btnCommand1"
                 android:layout_width="match_parent"
@@ -249,7 +249,7 @@
                     tools:text="OPEN" />
             </LinearLayout>
 
-            <!-- Bouton 2 (CLOSE / TURN OFF) -->
+
             <LinearLayout
                 android:id="@+id/btnCommand2"
                 android:layout_width="match_parent"
@@ -275,7 +275,7 @@
                     tools:text="CLOSE" />
             </LinearLayout>
 
-            <!-- Bouton 3 (STOP — caché pour les lumières via code) -->
+
             <LinearLayout
                 android:id="@+id/btnCommand3"
                 android:layout_width="match_parent"

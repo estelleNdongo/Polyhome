@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.auth.LoginActivity">
 
-    <!-- Image de fond -->
+
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Logo -->
+
     <FrameLayout
         android:id="@+id/logoFrame"
         android:layout_width="64dp"
@@ -38,7 +38,7 @@
             app:srcCompat="@drawable/ic_house" />
     </FrameLayout>
 
-    <!-- Titre -->
+
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -52,7 +52,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="14dp" />
 
-    <!-- Sous-titre -->
+
     <TextView
         android:id="@+id/subtitleText"
         android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="4dp" />
 
-    <!-- Label Email -->
+
     <TextView
         android:id="@+id/labelEmail"
         android:layout_width="0dp"
@@ -81,7 +81,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" />
 
-    <!-- Input Email -->
+
     <EditText
         android:id="@+id/loginEmail"
         android:layout_width="0dp"
@@ -101,7 +101,7 @@
         android:layout_marginEnd="32dp"
         tools:text="" />
 
-    <!-- Label Mot de passe -->
+
     <TextView
         android:id="@+id/labelPassword"
         android:layout_width="0dp"
@@ -117,7 +117,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" />
 
-    <!-- Input Mot de passe -->
+
     <EditText
         android:id="@+id/loginPassword"
         android:layout_width="0dp"
@@ -138,7 +138,7 @@
         app:layout_constraintTop_toBottomOf="@id/labelPassword"
         tools:text="" />
 
-    <!-- Bouton Se connecter -->
+
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="0dp"
@@ -156,7 +156,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/loginPassword" />
 
-    <!-- Texte : vous n'avez pas de compte ? -->
+
     <TextView
         android:id="@+id/textNoAccount"
         android:layout_width="0dp"
@@ -172,7 +172,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp" />
 
-    <!-- Bouton Créer votre compte -->
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="0dp"

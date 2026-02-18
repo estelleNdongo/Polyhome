@@ -7,7 +7,7 @@
     android:background="#FFFFFF"
     tools:context=".ui.devices.DevicesActivity">
 
-    <!-- Header -->
+
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
@@ -22,7 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Flèche retour -->
+
         <TextView
             android:id="@+id/btnBack"
             android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
             android:textColor="@color/primary"
            />
 
-        <!-- Titre maison -->
+
         <TextView
             android:id="@+id/titleHouse"
             android:layout_width="wrap_content"
@@ -44,7 +44,7 @@
             tools:text="Maison #658" />
     </LinearLayout>
 
-    <!-- Tabs -->
+
     <LinearLayout
         android:id="@+id/tabs"
         android:layout_width="0dp"
@@ -236,7 +236,7 @@
             android:background="@drawable/btn_add_user" />
     </LinearLayout>
 
-    <!-- ListView des users (initialement cachée) -->
+
     <ListView
         android:id="@+id/listUsers"
         android:layout_width="0dp"
@@ -253,7 +253,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/addUserSection" />
 
-    <!-- Bottom bar commande groupée (visible seulement en mode sélection) -->
+
     <LinearLayout
         android:id="@+id/bottomBar"
         android:layout_width="0dp"
@@ -269,7 +269,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Séparateur -->
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1.5dp"

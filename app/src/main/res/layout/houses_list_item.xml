@@ -10,7 +10,7 @@
     android:paddingTop="14dp"
     android:paddingBottom="14dp">
 
-    <!-- Icône maison -->
+
     <FrameLayout
         android:id="@+id/houseIconFrame"
         android:layout_width="42dp"
@@ -29,7 +29,7 @@
             app:srcCompat="@drawable/ic_house" />
     </FrameLayout>
 
-    <!-- Nom de la maison -->
+
     <TextView
         android:id="@+id/houseName"
         android:layout_width="0dp"
@@ -45,7 +45,7 @@
         android:layout_marginEnd="8dp"
         tools:text="Maison #1" />
 
-    <!-- Badge Propriétaire / Invité -->
+
     <TextView
         android:id="@+id/houseBadge"
         android:layout_width="wrap_content"
@@ -64,7 +64,7 @@
         android:layout_marginEnd="8dp"
         tools:text="Propriétaire" />
 
-    <!-- Flèche -->
+
     <TextView
         android:id="@+id/arrow"
         android:layout_width="wrap_content"
